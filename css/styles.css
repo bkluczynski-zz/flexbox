@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Mukta', sans-serif;
+}
+
+.container {
+  color: #fff;
+  background-color: #5995DA;  /* Blue */
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  width: 100%
+}
+
+.nav {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.author {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 10px;
+}
+
+.logo {
+  font-size: 60px;
+  padding-left:10px;
+}
+.name {
+  font-size: 40px;
+}
+.subtitle{
+  font-size: 20px;
+}
+
+.pictureContainer {
+  padding: 30px 10px 60px 10px;
+  display: flex;
+  justify-content: center;
+  width:100%;
+}
+
+.picture {
+  width: 900px;
+}
+
+img {
+  max-width:100%;
+}
+
+.photo-grid-container{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.photo-grid {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.photo-grid-item {
+  width: 285px;
+  height: auto;
+}
+
+.featuredWorkContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.featuredWork {
+  width: 900px;
+  display: flex;
+}
+
+.title {
+  padding-left: 10px;
+  padding-bottom: 4px;
+  font-size: 25px;
+  color: #A9A9A9;
+}
+
+p{
+  padding-bottom: 30px;
+  text-align: center;
+}
+h4 {
+  text-align: center;
+  font-size: 30px;
+  padding: 5px 0 5px 0;
+}
+
+@media screen and (max-width: 590px) {
+  .pictureContainer, .title{
+    padding: 10px;
+  }
+  .photo-grid-item{
+    max-height:100%;
+    width: 380px;
+  }
+  .photo-grid{
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .logo, .author{
+    padding:0
+  }
+}
